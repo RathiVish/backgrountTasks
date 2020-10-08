@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/threadFragment">
+
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.example.backgroundtasks.fragments.ServiceFragment"
+        android:label="ServiceFragment">
+        <action
+            android:id="@+id/action_serviceFragment_to_threadFragment"
+            app:destination="@id/threadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/asyncTaskFragment"
+        android:name="com.example.backgroundtasks.fragments.AsyncTaskFragment"
+        android:label="AsyncTaskFragment">
+        <action
+            android:id="@+id/action_asyncTaskFragment_to_serviceFragment"
+            app:destination="@id/serviceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/threadFragment"
+        android:name="com.example.backgroundtasks.fragments.ThreadFragment"
+        android:label="ThreadFragment">
+        <action
+            android:id="@+id/action_threadFragment_to_asyncTaskFragment"
+            app:destination="@id/asyncTaskFragment" />
+    </fragment>
+</navigation>

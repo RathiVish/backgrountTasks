@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Background Task</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Start</string>
+    <string name="next">Next Fragment</string>
+    <string name="startServiceText">Start Music with Background Service</string>
+    <string name="startThreadText">Click to Start progress bar</string>
+    <string name="progressThreadText">Updating progress bar</string>
+    <string name="completedThreadText">Process Completed</string>
+    <string name="startAsyncText">CallApi in background with AsyncTask</string>
+    <string name="stop">Stop</string>
+</resources>
